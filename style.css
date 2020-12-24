@@ -1,0 +1,176 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: flex;
+}
+
+.global {
+    border: 2px black solid;
+    position: relative;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+}
+
+.walls-container {
+    width: 100%;
+    height: 10%;
+    border: 2px pink solid;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-left: 8%;
+}
+
+.walls-list-item {
+    background: brown;
+    border: none;
+    opacity: 1;
+    height: 100%;
+    width: 2%;
+    margin-right: 8%;
+}
+
+.walls-list-item:last-child {
+    margin-right: 0px;
+}
+
+.squares-container {
+    width: 80%;
+    height: 80%;
+    border: 2px green solid;
+    margin: auto;
+    padding-right: 1.11%;
+    padding-bottom: 1.11%;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.square {
+    width: 10%;
+    height: 10%;
+    margin-top: 1.11%;
+    margin-left: 1.11%;
+    border: solid black 1px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    cursor: pointer;
+}
+
+h1 {
+    position: fixed;
+    top: 10px;
+    left: 50vw;
+    transform: translateX(-50%);
+    margin: 0px;
+}
+
+.vertical-wall,.horizontal-wall {
+    background: brown;
+    border: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.vertical-wall {
+    width: 1.11%;
+    height: 21.11%;
+}
+
+.horizontal-wall {
+    height: 1.11%;
+    width: 21.11%;
+}
+
+.vertical-wall:hover,.horizontal-wall:hover {
+    opacity: 1;
+}
+
+.column-1 {
+    left: 11%;
+}
+
+.column-2 {
+    left: 22%;
+}
+
+.column-3 {
+    left: 33%;
+}
+
+.column-4 {
+    left: 43.95%;
+}
+
+.column-5 {
+    left: 54.9%;
+}
+
+.column-6 {
+    left: 65.8%;
+}
+
+.column-7 {
+    left: 76.7%;
+}
+
+.column-8 {
+    left: 87.6%;
+}
+
+.row-1 {
+    top: 11%;
+}
+
+.row-2 {
+    top: 22%;
+}
+
+.row-3 {
+    top: 33%;
+}
+
+.row-4 {
+    top: 43.95%;
+}
+
+.row-5 {
+    top: 54.9%;
+}
+
+.row-6 {
+    top: 65.8%;
+}
+
+.row-7 {
+    top: 76.7%;
+}
+
+.row-8 {
+    top: 87.6%;
+}
+
+.stay-visible {
+    opacity: 1 !important;
+}
+
+.stay-visible:hover {
+    opacity: 1 !important;
+}
+
+button.testing {
+    position: fixed;
+    top:0;
+    left: auto;
+    right: 0;
+}
