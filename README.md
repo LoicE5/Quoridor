@@ -17,3 +17,7 @@ I built the Quoridor using HTML, CSS and, mostly, JavaScript. I used JS to autom
 ## Language
 
 🇬🇧 &nbsp;English 
+
+### Links
+
+**[Get to the project here !](https://loice5.github.io/Quoridor/)**
