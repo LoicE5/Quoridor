@@ -8,13 +8,38 @@
     <link rel="shortcut icon" href="https://www.qwant.com/favicon.png?1539938515" type="image/x-icon">
 </head>
 <body>
-    <button class="testing" onclick="checkItOut()">Test</button>
-    <h1>Round 1</h1>
+    <div class="info-wrapper">
+        <h1>Round 1</h1>
+        <p><b>It's blue to play</b> | Selected mode : <i>2 players</i></p>
+        <div class="buttons-wrapper">
+            <button onclick="switchNumOfPlayers(1)">1 player (vs AI)</button>&nbsp;<button onclick="switchNumOfPlayers(2)">2 players</button>&nbsp;<button onclick="switchNumOfPlayers(3)">3 players</button>&nbsp;<button onclick="switchNumOfPlayers(4)">4 players</button>
+        </div>
+        <button class="walls-set" onclick="setWallsCount()">Set 5 walls per player</button>
+    </div>
     <div class="global">
+        <div class="walls-horizon-container" id="walls4"></div>
         <div class="walls-container" id="walls1"></div>
         <div class="squares-container"></div>
         <div class="walls-container" id="walls2"></div>
+        <div class="walls-horizon-container" id="walls3"></div>
     </div>
+
+    <p class="credits">
+        Made with ❤️ by :
+        <br>
+        Loïc Etienne
+        <br>
+        Michelle O'Brien
+        <br>
+        Aline Jneid
+    </p>
+
+    <!--⬇ Background image ⬇-->
+    <div class="background-div"></div>
+    
+    <!--⬇ JavaScript ⬇-->
+    <script src="functions.js"></script>
     <script src="app.js"></script>
+    <script src="ai.js"></script>
 </body>
 </html>

@@ -23,3 +23,5 @@
 hs_err_pid*
 
 *.pdf
+.DS_Store
+.DS_Store
