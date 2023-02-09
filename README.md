@@ -1,5 +1,7 @@
 # Quoridor game
 
+> Note : This project is now old, and was coded without using object-oriented programming. If I had to remake it now, my approach would be much different. However, it still work like a charm.
+
 ## Update
 
 * Added the 3 and 4 players mode (using LocalStorage)
