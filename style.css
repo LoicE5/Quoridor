@@ -270,3 +270,20 @@ button:active {
     opacity: 0.7;
     filter: blur(10px);
 }
+
+.github-link {
+    position: fixed;
+    left: 10px;
+    bottom: 0;
+    display: block;
+}
+
+.github-link>img {
+    width: 30px;
+    height: auto;
+    transition: filter ease-in-out 0.5s;
+}
+
+.github-link>img:hover {
+    filter: drop-shadow(0 0 50px darkslategray);
+}
