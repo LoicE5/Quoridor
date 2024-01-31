@@ -28,29 +28,29 @@ window.onresize = ()=>{
 }
 
 /*⬇ Génération des carrés ⬇*/
-for(i=0;i<81;i++){
+for (let i = 0; i < 81; i++){
     createSquare(i+1);
 }
 
 /*⬇ Génération des murs verticaux ⬇*/
-for(j=1;j<9;j++){
+for (let j = 1; j < 9; j++){
     createWall(1,1.11+'%','vertical',j);
-    for(i=1;i<8;i++){
+    for (let i = 1; i < 8; i++){
         createWall(i+1,i*10*1.11+'%','vertical',j);
     }
 }
 
 /*⬇ Génération des murs horizontaux ⬇*/
-for(j=1;j<9;j++){
+for (let j = 1; j < 9; j++){
     createWall(1,1.11+'%','horizontal',j);
-    for(i=1;i<8;i++){
+    for (let i = 1; i < 8; i++){
         createWall(i+1,i*10*1.11+'%','horizontal',j);
     }
 }
 
 /*⬇ Global variables declaration ⬇*/
 
-let numOfPlayers = window.localStorage.getItem('numberOfPlayers');
+let numOfPlayers = window.localStorage.getItem('numberOfPlayers') || 2;
 console.log('Current number of players : '+numOfPlayers);
 
 const initialWallCount = window.localStorage.getItem('numberOfWalls');
@@ -119,19 +119,19 @@ if(numOfPlayers == 1 || numOfPlayers == 2){
 document.querySelector('button.walls-set').innerText = `Set ${invertedWallCount} walls per player`;
 
 /*⬇ Création des quotas de murs individuels ⬇*/
-for(i=0;i<initialWallCount;i++){
+for (let i = 0; i < initialWallCount; i++){
     createWallList('walls1');
 }
 
-for(i=0;i<initialWallCount;i++){
+for (let i = 0; i < initialWallCount; i++){
     createWallList('walls2');
 }
 
-for(i=0;i<initialWallCount;i++){
+for (let i = 0; i < initialWallCount; i++){
     createWallList('walls3',true);
 }
 
-for(i=0;i<initialWallCount;i++){
+for (let i = 0; i < initialWallCount; i++){
     createWallList('walls4',true);
 }
 /*⬆ Création des quotas de murs individuels ⬆*/

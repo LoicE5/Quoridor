@@ -257,28 +257,28 @@ function switchNumOfPlayers(value){
 
 function checkIfWon(color){
     if(color == 'blue'){
-        for(i=0;i<line.first.length;i++){
+        for (let i = 0; i < line.first.length; i++){
             if(document.querySelector(`#sq${line.first[i]}`).style.backgroundImage == bluePath){
                 alert(`${color} won the game !`);
                 location.reload();
             }
         }
     } else if(color == 'red'){
-        for(i=0;i<line.second.length;i++){
+        for (let i = 0; i < line.second.length; i++){
             if(document.querySelector(`#sq${line.second[i]}`).style.backgroundImage == redPath){
                 alert(`${color} won the game !`);
                 location.reload();
             }
         }
     } else if(color == 'green'){
-        for(i=0;i<line.third.length;i++){
+        for (let i = 0; i < line.third.length; i++){
             if(document.querySelector(`#sq${line.third[i]}`).style.backgroundImage == greenPath){
                 alert(`${color} won the game !`);
                 location.reload();
             }
         }
     } else if(color == 'purple'){
-        for(i=0;i<line.fourth.length;i++){
+        for (let i = 0; i < line.fourth.length; i++){
             if(document.querySelector(`#sq${line.fourth[i]}`).style.backgroundImage == purplePath){
                 alert(`${color} won the game !`);
                 location.reload();
@@ -326,13 +326,13 @@ function returnCurrentSquare(color){
     let element;
 
     if(color == 'red'){
-        for(i=0;i<document.querySelectorAll('.square').length;i++){
+        for(let i=0;i<document.querySelectorAll('.square').length;i++){
             if(document.querySelectorAll('.square')[i].style.backgroundImage == redPath){
                 element = document.querySelectorAll('.square')[i];
             }
         }
     } else if(color == 'blue'){
-        for(i=0;i<document.querySelectorAll('.square').length;i++){
+        for(let i=0;i<document.querySelectorAll('.square').length;i++){
             if(document.querySelectorAll('.square')[i].style.backgroundImage == bluePath){
                 element = document.querySelectorAll('.square')[i];
             }
